@@ -1,6 +1,6 @@
 FROM lmsysorg/sglang:latest
 
-ARG SGLANG_INSTALL_SOURCE=pypi
+ARG SGLANG_INSTALL_SOURCE=source
 
 # Install the latest sglang on top of the pinned runtime base image.
 RUN if [ "$SGLANG_INSTALL_SOURCE" = "source" ]; then \
